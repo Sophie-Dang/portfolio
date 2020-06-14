@@ -1,0 +1,113 @@
+#career {
+    background-color: $color_alt;
+
+    .career-items {
+        display: flex;
+        justify-content: space-evenly;
+
+        margin: auto;
+
+        position: relative;
+
+        &__link {
+            display: inline-block;
+            width: 40%;
+
+            text-align: center;
+            color: $color_accent;
+
+            padding-bottom: .5rem;
+
+            .link {
+                display: inline;
+                cursor: pointer;
+
+                position: relative;
+
+                &:hover::after {
+                    content: " ";
+                    display: block;
+                    width: 100%;
+
+                    position: absolute;
+                    left: 0;
+                    bottom: -4px;
+
+                    border-bottom: $color_accent solid 1.5px;
+
+                    transition: ease;
+                    animation: border_load 1s;
+                }
+
+                &.is-active {
+
+                    &::after {
+                        content: " ";
+                        display: block;
+                        width: 100%;
+    
+                        position: absolute;
+                        left: 0;
+                        bottom: -4px;
+    
+                        border-bottom: $color_accent solid 1.5px;
+    
+                        transition: ease;
+                    }
+                }
+            }
+        }
+
+        &:last-child::after {
+            content: "|";
+            display: inline-block;
+            color: $color_dark;
+            font-weight: bold;
+
+            position: absolute;
+            top: 0;
+        }
+    }
+
+    .career {
+
+        &-content {
+
+            &:first-child {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    @media (min-width:576px) {
+        
+        .career-items {
+            width: 50%;
+        }
+    }
+
+    @media (min-width:768px) {
+        .career {
+            &-content {
+                width: 60%;
+                margin: auto;
+            }
+        }
+    }
+
+    @media (min-width:1200px) {
+
+        .career-items {
+            width: 40%;
+        }
+    }
+}
+
+@keyframes border_load {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}

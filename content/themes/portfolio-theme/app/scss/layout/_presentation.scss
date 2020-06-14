@@ -1,0 +1,39 @@
+#presentation {
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .presentation-content {
+        margin: auto;
+        position: relative;
+        z-index: 10;
+        
+        &__text {
+            text-align: left;
+            color: #8e8e8e;
+
+            .fa {
+                padding-right: .3rem;
+                color: $color_accent;
+
+                &-laptop {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    @media (min-width:768px)  {
+
+        .presentation-content {
+            width: 70%;
+            padding: 1rem;
+
+            &__text {
+                text-align: center;
+            }
+        }
+    }
+}
