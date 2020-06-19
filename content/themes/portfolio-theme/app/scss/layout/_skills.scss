@@ -1,0 +1,25 @@
+#skills {
+    background-color: $color_main;
+
+    .skills-content {
+        padding: 1rem;
+
+        &__title {
+            margin-bottom: 1rem;
+            font-size: 18px;
+        }
+
+        &__items {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+    }
+
+    @media(min-width:576px) {
+        border-radius: 18%;
+    }
+    
+    @media (min-width: 992px) {
+        border-radius: 50% 50% 0 0;
+    }
+}
