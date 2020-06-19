@@ -82,8 +82,8 @@
                 width: 50%;
     
                 a {
-                    display: inline-block;
-                    width: 100%;
+                    text-align: left;
+                    align-self: flex-start;
                 }
             }
 
@@ -107,9 +107,10 @@
     
             z-index: 0;
 
-            background: linear-gradient(128deg, #161f44 19%, #f0f0f000 1%)
+            background: linear-gradient(128deg, #04091c  19%, #f0f0f000 1%)
             
         }
     }
 }
+// #161f44
 //#002465
