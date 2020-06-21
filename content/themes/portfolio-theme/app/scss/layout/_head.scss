@@ -1,16 +1,19 @@
 #head {
     // background-color: #f0f0f0;
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    padding: inherit 0;
+    padding-top: 5rem;
+    padding-bottom: 16rem;
     min-height: 55vh;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    position: relative;
 
     .head {
         
@@ -77,6 +80,35 @@
         }
     }
 
+    .social {
+
+        &-container {
+            margin: .5rem 0 0;
+        }
+
+        &__link {
+            color: $color_main;
+            margin: 0 .5rem;
+            
+            .fa {
+                font-size: 2rem;
+                
+                &:hover {
+                    transform: scale(1.2);
+                    transition: all .2s ease-in-out;
+                }
+            }
+
+            &:hover::after {
+                content: none;
+            }
+        }
+    }
+
+    @media(min-width:576px) {
+        padding-top: 8rem;
+    }
+
     @media (min-width:768px)  {
 
         .head {
@@ -112,6 +144,16 @@
                     a:hover::after {
                         bottom: -4px;
                     }
+                }
+            }
+        }
+
+        .social {
+
+            &__link {
+
+                .fa {
+                    font-size: 2.5rem;
                 }
             }
         }

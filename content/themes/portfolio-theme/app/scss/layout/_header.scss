@@ -1,6 +1,17 @@
 .header {
-    height: 5rem;
+    height: 4rem;
+    width: 100%;
+
     display: flex;
-    align-items: center;
-    background-color: #0b1129;
+    background-color: #84c4dff7;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    @media(min-width:768px) {
+        padding: 0 3rem;
+        align-items: center;
+    }
 }

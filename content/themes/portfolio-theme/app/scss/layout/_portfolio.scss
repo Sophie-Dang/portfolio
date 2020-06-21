@@ -3,7 +3,7 @@
     background: linear-gradient(0deg, #f1f1f1  75%, #f7f7f7 100%);
     
     border-radius: 0 0 60px 60px;
-    padding-top: 1rem;
+    padding-top: 29rem;
 
     .portfolio {
 
@@ -48,6 +48,11 @@
 
                     &::after {
                         content: none;
+                    }
+
+                    &:hover {
+                        transform: scale(1.06);
+                        transition: all .2s ease-in-out;
                     }
 
                     &:hover::after {
@@ -122,8 +127,13 @@
         }
     }
 
+    @media(min-width:576px) {
+        padding-top: 26rem;
+    }
+
     @media (min-width:768px) {
         border-radius: 0 0 50% 50%;
+        padding-top: 26rem;
 
         .portfolio {
 
@@ -141,6 +151,10 @@
                 width: 20rem;
             }
         }
+    }
+
+    @media (min-width:992px) {
+        padding-top: 15rem;
     }
 }
 

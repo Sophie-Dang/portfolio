@@ -1,19 +1,5 @@
+
 .main {
-    height: 40rem;
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    @media (min-width: 992px) {
-        height: 50rem;
-    }
-}
-
-body {
     position: relative;
+    z-index: -1;
 }

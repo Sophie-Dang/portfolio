@@ -44,3 +44,10 @@ h6 {
 #portfolio .section__title {
     padding-bottom: 1rem;
 }
+
+#skills .section__title {
+    
+    @media (min-width: 992px) {
+        padding-top: 0;
+    }
+}
