@@ -1,6 +1,19 @@
 #career {
     // background-color: $color_alt;
-    background: linear-gradient(0deg, #f7f7f7 90%, #f7f7f700 100%);
+    // background: linear-gradient(0deg, #f7f7f7 75%, #ffffff 100%);
+    // border-radius: 0 0 0 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    padding-top: 20rem;
+    margin-bottom: -20rem;
+
+    position: relative;
+    top: -18rem;
+    z-index: -1;
+
+    background: #f7f7f7;
 
     .career-items {
         display: flex;
@@ -12,19 +25,32 @@
 
         &__link {
             display: inline-block;
-            width: 40%;
+            // width: 40%;
 
             text-align: center;
-            color: $color_accent;
+            color: $color_accent_darken;
+            font-size: 20px;
 
             padding-bottom: .5rem;
 
+            margin: 0 2rem;
+
             .link {
-                display: inline;
+                // display: inline;
                 cursor: pointer;
 
                 position: relative;
 
+                display: inline-block;
+                margin-top: 1rem;
+                padding: .8rem 1.5rem;
+                border-radius: 8px;
+                background: linear-gradient(0deg, #a9abcc 10%, #81c8e6 100%);
+                color: #ffffff;
+                font-weight: normal;
+                align-self: center;
+
+                /*
                 &:hover::after {
                     content: " ";
                     display: block;
@@ -38,6 +64,11 @@
 
                     transition: ease;
                     animation: border_load 1s;
+                }*/
+
+                &:hover {
+                    transform: scale(1.05);
+                    transition: all .2s ease-in-out;
                 }
 
                 &.is-active {
@@ -58,7 +89,7 @@
                 }
             }
         }
-
+        /*
         &:last-child::after {
             content: "|";
             display: inline-block;
@@ -67,7 +98,7 @@
 
             position: absolute;
             top: 0;
-        }
+        }*/
     }
 
     .career {
@@ -94,6 +125,8 @@
                 margin: auto;
             }
         }
+
+        
     }
 
     @media (min-width:1200px) {

@@ -1,25 +1,108 @@
 #skills {
     background-color: $color_main;
+    border-radius: 5rem;
+    box-shadow: 0 0 29px #00000012;
+
+    margin-bottom: 2rem;
 
     .skills-content {
         padding: 1rem;
+        margin-bottom: 1rem;
 
         &__title {
             margin-bottom: 1rem;
-            font-size: 18px;
+            font-size: 1.3rem;
+            text-align: center;
         }
 
         &__items {
             display: grid;
             grid-template-columns: 25% 25% 25% 25%;
+            row-gap: 1rem;
         }
     }
 
     @media(min-width:576px) {
-        border-radius: 18%;
+
+        .skills-content {
+            width: 60%;
+            margin: auto;
+        }
     }
     
     @media (min-width: 992px) {
-        border-radius: 50% 50% 0 0;
+        border-radius: 1rem;
+
+        padding-right: 2rem;
+        padding-left: 2rem;
+        padding-top: 4rem;
+
+        width: 90%;
+
+        margin: auto;
+        min-height: 28rem;
+        margin-bottom: 2rem;
+
+        box-shadow: 0 0 29px #00000012;
+
+        .skills-content {
+            width: 30%;
+            border-right: 1px solid #dedede;
+            padding: 0 1rem;
+            margin: 0 auto;
+
+            &:last-child {
+                border: none;
+            }
+
+            &__title {
+                margin-bottom: 1rem;
+                text-align: left;
+            }
+
+            &__items {
+                display: grid;
+                grid-template-columns: 20% 20% 20% 20%;
+                row-gap: 1rem;
+                column-gap: 0.5rem;
+            }
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            width: 100%;
+            margin: auto;
+            margin-top: 2.5rem;
+        }
+    }
+
+    @media (min-width: 1200px) {
+
+        .skills-content {
+
+            &__title {
+                font-size: $font_title_default;
+            }
+        }
+    }
+
+    @media (min-width: 1400px) {
+        width: 65%;
+        
+        .skills-content {
+            margin: 1rem;
+
+            &:first-of-type {
+                margin-left: auto;
+                margin-right: 1rem;
+            }
+
+            &:last-child {
+                margin-right: auto;
+                margin-left: 1rem;
+            }
+        }
     }
 }

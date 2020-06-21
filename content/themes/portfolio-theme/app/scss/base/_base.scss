@@ -6,11 +6,17 @@ body {
     font-family: $font-default;
     line-height: 1.4em;
     color: $color_dark;
+    background: #f7f7f7;
+    font-size: $font-size-default;
 }
 
 .section-wrap {
     min-height: 50vh;
-    padding: 2.5rem 1rem;
+    padding: 2.8rem 1rem;
+
+    @media(min-width:768px) {
+        padding: 2.5rem 1rem;
+    }
 }
 
 .div-wrap {
