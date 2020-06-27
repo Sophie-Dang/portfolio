@@ -4,7 +4,7 @@ a {
     display: inline;
     position: relative;
 
-    color: $color_accent;
+    color: $color_accent_darken;
 
     &:hover::after {
         content: " ";

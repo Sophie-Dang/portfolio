@@ -1,5 +1,11 @@
 #career {
-    background-color: $color_alt;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    padding-bottom: 17rem;
+
+    background: #f7f7f7;
 
     .career-items {
         display: flex;
@@ -11,32 +17,52 @@
 
         &__link {
             display: inline-block;
-            width: 40%;
 
             text-align: center;
-            color: $color_accent;
+            color: $color_accent_darken;
+            font-size: 1.125rem;
 
             padding-bottom: .5rem;
 
+            margin: 0;
+
             .link {
-                display: inline;
                 cursor: pointer;
 
                 position: relative;
 
+                display: inline-block;
+                margin-top: 1rem;
+                padding: .8rem 1rem;
+                border-radius: 8px;
+                background: linear-gradient(0deg, #a9abcc 10%, #81c8e6 100%);
+                color: #ffffff;
+                font-weight: normal;
+                align-self: center;
+
                 &:hover::after {
                     content: " ";
                     display: block;
+                    height: 100%;
                     width: 100%;
 
                     position: absolute;
-                    left: 0;
-                    bottom: -4px;
+                    left: -6.5px;
+                    right: 0;
+                    bottom: 0px;
 
-                    border-bottom: $color_accent solid 1.5px;
+                    padding: 0 .3rem;
+
+                    border-right: $color_accent solid 1.5px;
+                    border-left: $color_accent solid 1.5px;
 
                     transition: ease;
-                    animation: border_load 1s;
+                    animation: border_load_sides .5s;
+                }
+
+                &:hover {
+                    transform: scale(1.05);
+                    transition: all .2s ease-in-out;
                 }
 
                 &.is-active {
@@ -44,28 +70,23 @@
                     &::after {
                         content: " ";
                         display: block;
+                        height: 100%;
                         width: 100%;
     
                         position: absolute;
-                        left: 0;
-                        bottom: -4px;
+                        left: -6.5px;
+                        right: 0;
+                        bottom: 0px;
     
-                        border-bottom: $color_accent solid 1.5px;
+                        padding: 0 .3rem;
+    
+                        border-right: $color_accent solid 1.5px;
+                        border-left: $color_accent solid 1.5px;
     
                         transition: ease;
                     }
                 }
             }
-        }
-
-        &:last-child::after {
-            content: "|";
-            display: inline-block;
-            color: $color_dark;
-            font-weight: bold;
-
-            position: absolute;
-            top: 0;
         }
     }
 
@@ -74,7 +95,7 @@
         &-content {
 
             &:first-child {
-                margin-bottom: 2rem;
+                margin-bottom: 3rem;
             }
         }
     }
@@ -82,7 +103,16 @@
     @media (min-width:576px) {
         
         .career-items {
-            width: 50%;
+            width: 50%; 
+
+            &__link {
+                margin: 0 2rem;
+                font-size: 1.25rem;
+
+                .link {
+                    padding: .8rem 1.5rem;
+                }
+            }
         }
     }
 
@@ -93,6 +123,8 @@
                 margin: auto;
             }
         }
+
+        
     }
 
     @media (min-width:1200px) {
@@ -103,3 +135,12 @@
     }
 }
 
+@keyframes border_load_sides {
+
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
