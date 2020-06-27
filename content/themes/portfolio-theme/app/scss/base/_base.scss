@@ -2,13 +2,13 @@
     box-sizing: border-box;
 
     &::-moz-selection {
-        background: none;
-        color: #598aaf;
+        background: #598aaf;
+        color: #ffffff;
     }
 
     &::selection {
-        background: none;
-        color: #598aaf;
+        background: #598aaf;
+        color: #ffffff;
     }
 }
 
@@ -18,9 +18,14 @@ body {
     color: $color_dark;
     background: #f7f7f7;
     font-size: $font-size-default;
+    
     position: relative;
     z-index: -1;
+
     height: 100%;
+
+    animation: opacity .8s;
+    transition: all  ease-in-out 1s;
 }
 
 main {
@@ -82,4 +87,8 @@ main {
         margin: auto;
     }
 
+}
+
+.is-active {
+    display: block !important;
 }

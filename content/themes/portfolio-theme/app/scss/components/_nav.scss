@@ -6,9 +6,6 @@
 
     &-list {
         display: none;
-        // display: flex;
-        // justify-content: space-between;
-        // flex-wrap: wrap;
 
         width: 100%;
 
@@ -24,6 +21,7 @@
             display: block;
     
             width: 100%;
+            height: 20rem;
     
             text-align: center;
             padding: 4rem 2rem;
@@ -34,10 +32,10 @@
             left: 0;
             z-index: 10;
 
-            animation: nav_animation 1s linear;
+            animation: nav_animation .5s linear;
             transition: all ease-in-out;
     
-            .nav-list__item {
+            li {
                 padding: .5rem 0;
                 animation: navlist_animation 2.5s;
             }
@@ -108,17 +106,13 @@
         height: 0;
     }
     100% {
-        height: auto;
+        height: 20rem;
         padding: 4rem 0;
     }
 }
 
 @keyframes navlist_animation {
     0% {
-        display: none;
-        opacity: 0;
-    }
-    15% {
         display: none;
         opacity: 0;
     }
