@@ -1,7 +1,6 @@
 var career = {
 
     init: function() {
-      console.log('career');
       career.displayExperience();
     },
 

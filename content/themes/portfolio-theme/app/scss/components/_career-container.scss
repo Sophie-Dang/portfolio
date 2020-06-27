@@ -11,12 +11,14 @@
         animation: slide_right .8s;
         transition: all  ease-in-out 2s;
 
-        left: -100vw;
+        left: -100%;
     }
 
     #education,
     #experience {
-        min-width: 100vw;
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%;
         position: relative;
 
         margin-top: 0;
@@ -67,7 +69,7 @@
     100% {
         opacity: 1;
         position: relative;
-        left: -100vw;
+        left: -100%;
     }
 }
 
