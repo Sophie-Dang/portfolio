@@ -12,17 +12,7 @@ var menu = {
             menu.removeMenu();
         }
 
-        $('a[href^="#"]').on('click', function(event) {
-
-            let target = $(this.getAttribute('href')); 
-
-            if( target.length ) {
-                event.preventDefault();
-                $('html, body').stop().animate({
-                    scrollTop: target.offset().top - $('.header').height()
-                }, 1000);
-            }
-        });
+        menu.smoothScroll();
     },
 
     /* ---------------DISPLAY MENU--------------- */
@@ -74,6 +64,24 @@ var menu = {
         // Css burger icon
         $burgerButtonElement = $('.nav-link.burger');
         $burgerButtonElement.css('display', 'inline');
+    },
+
+    smoothScroll: function() {
+
+        $('a[href^="#"]').on('click', function(event) {
+
+            let target = $(this.getAttribute('href')); 
+            let fadInBottomElement = $('.fadInBottom');
+            
+            if( target.length ) {
+                event.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top - $('.header').height()
+                }, 1000);
+
+                fadInBottomElement.css({transform : 'none', opacity : 1});
+            }
+        });
     }
 };
   
