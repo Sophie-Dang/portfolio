@@ -1,0 +1,83 @@
+.career-wrap {
+    display: flex;
+    width: 100%;
+
+    animation: slide_left .8s;
+    transition: all  ease-in-out 2s;
+
+    position: relative;
+
+    &.experience {
+        animation: slide_right .8s;
+        transition: all  ease-in-out 2s;
+
+        left: -100vw;
+    }
+
+    #education,
+    #experience {
+        min-width: 100vw;
+        position: relative;
+
+        margin-top: 0;
+    } 
+
+    #education {
+        opacity: 0;
+
+        &.is-active {
+            opacity: 1;
+            animation: opacity 1.5s;
+            transition: all  ease-in-out 2s;
+        }
+    }
+    
+    #experience {
+        opacity: 0;
+
+        &.is-active {
+            opacity: 1;
+            animation: opacity 1s;
+            transition: all  ease-in-out 2s;
+        }
+    }
+}
+
+@keyframes slide_left {
+
+    0% {
+        opacity: 0;
+        position: relative;
+        left: -100vw;
+    }
+    100% {
+        opacity: 1;
+        position: relative;
+        left: 0;
+    }
+}
+
+@keyframes slide_right {
+
+    0% {
+        opacity: 0;
+        position: relative;
+        left: 0;
+    }
+    100% {
+        opacity: 1;
+        position: relative;
+        left: -100vw;
+    }
+}
+
+@keyframes opacity {
+
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
