@@ -1,9 +1,6 @@
 .footer {
     padding: 2rem;
-    padding-top: 54rem;
-    margin-top: 3rem;
 
-    background: #404040;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -11,34 +8,7 @@
     text-align: center;
     color: $color_main;
 
-    position: relative;
-    z-index: -2;
-
-    @media(min-width:360px) {
-        padding-top: 48rem;
-    }
-
-    @media(min-width:400px) {
-        padding-top: 45rem;
-    }
-
-    @media(min-width:576px) {
-        padding-top: 33rem;
-    }
-
-    @media (min-width:768px) {
-        padding-top: 41rem;
-    }
-
-    @media (min-width: 992px) {
-        padding-top: 51rem;
-    }
-
-    @media (min-width: 1200px) {
-        padding-top: 49rem;
-    }
-
-    @media (min-width: 1400px) {
-        padding-top: 53rem;
-    }
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }

@@ -20,6 +20,11 @@ body {
     font-size: $font-size-default;
     position: relative;
     z-index: -1;
+    height: 100%;
+}
+
+main {
+    height: 100%;
 }
 
 .section-wrap {

@@ -1,18 +1,9 @@
 #career {
-    // background-color: $color_alt;
-    // background: linear-gradient(0deg, #f7f7f7 75%, #ffffff 100%);
-    // border-radius: 0 0 0 60px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
-    padding-top: 20rem;
-    padding-bottom: 4rem;
-    margin-bottom: -20rem;
-
-    position: relative;
-    top: -18rem;
-    z-index: -1;
+    padding-bottom: 17rem;
 
     background: #f7f7f7;
 
@@ -49,21 +40,25 @@
                 font-weight: normal;
                 align-self: center;
 
-                /*
                 &:hover::after {
                     content: " ";
                     display: block;
+                    height: 100%;
                     width: 100%;
 
                     position: absolute;
-                    left: 0;
-                    bottom: -4px;
+                    left: -6.5px;
+                    right: 0;
+                    bottom: 0px;
 
-                    border-bottom: $color_accent solid 1.5px;
+                    padding: 0 .3rem;
+
+                    border-right: $color_accent solid 1.5px;
+                    border-left: $color_accent solid 1.5px;
 
                     transition: ease;
-                    animation: border_load 1s;
-                }*/
+                    animation: border_load_sides .5s;
+                }
 
                 &:hover {
                     transform: scale(1.05);
@@ -75,29 +70,24 @@
                     &::after {
                         content: " ";
                         display: block;
+                        height: 100%;
                         width: 100%;
     
                         position: absolute;
-                        left: 0;
-                        bottom: -4px;
+                        left: -6.5px;
+                        right: 0;
+                        bottom: 0px;
     
-                        border-bottom: $color_accent solid 1.5px;
+                        padding: 0 .3rem;
+    
+                        border-right: $color_accent solid 1.5px;
+                        border-left: $color_accent solid 1.5px;
     
                         transition: ease;
                     }
                 }
             }
         }
-        /*
-        &:last-child::after {
-            content: "|";
-            display: inline-block;
-            color: $color_dark;
-            font-weight: bold;
-
-            position: absolute;
-            top: 0;
-        }*/
     }
 
     .career {
@@ -145,3 +135,12 @@
     }
 }
 
+@keyframes border_load_sides {
+
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
