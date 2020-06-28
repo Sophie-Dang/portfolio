@@ -8,6 +8,9 @@ var app = {
 
     $window.on('scroll resize', app.check_if_in_view);
     $window.trigger('scroll');
+
+    app.displayModal();
+    app.removeModal();
   },
 
   check_if_in_view: function () {
@@ -31,6 +34,79 @@ var app = {
       } else {
         $element.removeClass('in-view');
       }
+    });
+  },
+
+  displayModal: function() {
+    const $linkElement = $('.portfolio-link');
+    let $body = $('body');
+
+    $linkElement.each(function() {
+      // Définition de l'élément
+      let $element = $(this);
+
+      // On récupère la valeur de l'attribut "href"
+      let $linkElementAttr = "#" + $element.attr('href');
+
+      $element.on('click', function() {
+
+        event.preventDefault();
+
+        // On sélectionne dans le DOM ce qui correspond à chaque attr href
+        let $modalElement = $($linkElementAttr);
+
+        // On ajoute la class qui va display la modale
+        $modalElement.addClass('is-active');
+        
+        $body.css("overflow-y", "hidden");
+      });
+    });
+  },
+
+  removeModal: function() {
+
+    const $removeIconElement = $('.modal__icon.remove');
+    const $removeButtonElement = $('.modal-link');
+    let $body = $('body');
+
+    $removeIconElement.each(function() {
+
+      // Définition de l'élément
+      let $element = $(this);
+
+      $element.on('click', function() {
+
+        // On sélectionne dans le DOM la class "modal-wrap" la plus proche de l'élément courant et on obtient son id
+        let $modalId = "#" + $(this).closest('.modal-wrap').attr('id');
+
+        // On cible l'élément qui a l'id qu'on vient de récupérer
+        let $currentModal = $($modalId);
+
+        // On remove la class qui affiche la modale
+        $currentModal.removeClass('is-active');
+
+        $body.css("overflow-y", "auto");
+      });
+    });
+
+    $removeButtonElement.each(function() {
+
+      // Définition de l'élément
+      let $element = $(this);  console.log($element)
+
+      $element.on('click', function() {
+
+        // On sélectionne dans le DOM la class "modal-wrap" la plus proche de l'élément courant et on obtient son id
+        let $modalId = "#" + $(this).closest('.modal-wrap').attr('id');
+       
+        // On cible l'élément qui a l'id qu'on vient de récupérer
+        let $currentModal = $($modalId); console.log($currentModal)
+
+        // On remove la class qui affiche la modale
+        $currentModal.removeClass('is-active');
+
+        $body.css("overflow-y", "auto");
+      });
     });
   }
 };

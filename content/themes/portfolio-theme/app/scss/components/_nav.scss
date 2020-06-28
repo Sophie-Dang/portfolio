@@ -99,25 +99,3 @@
         }
     }
 }
-
-@keyframes nav_animation {
-    0% {
-        padding: 0;
-        height: 0;
-    }
-    100% {
-        height: 20rem;
-        padding: 4rem 0;
-    }
-}
-
-@keyframes navlist_animation {
-    0% {
-        display: none;
-        opacity: 0;
-    }
-    100% {
-        display: list-item;
-        opacity: 1;
-    }
-}

@@ -118,24 +118,24 @@
       <div class="portfolio-container">
 
         <article class="portfolio-content fadInBottom">
-          <a class="portfolio-content__img-link" href="#">
+          <a class="portfolio-content__img-link portfolio-link" href="petsbook">
             <img  class="portfolio-content__img" src="images/petsbook-logo-w.png" alt="">
           </a>
           <div class="portfolio-content__item">
             <h5 class="portfolio-content__title">Petsbook</h5>
             <p class="portfolio-content__texte">Site permettant d'immortaliser le quotidien de ses animaux</p>
-            <a href="#" class="portfolio-content__link">En savoir plus</a>
+            <a href="petsbook" class="portfolio-content__link portfolio-link">En savoir plus</a>
           </div>
         </article>
 
         <article class="portfolio-content fadInBottom">
-          <a class="portfolio-content__img-link" href="#">
+          <a class="portfolio-content__img-link portfolio-link" href="cv">
             <img  class="portfolio-content__img" src="images/bann-light-l.png" alt="">
           </a>
           <div class="portfolio-content__item">
             <h5 class="portfolio-content__title">Mon site CV</h5>
             <p class="portfolio-content__texte">Il s'agit du site sur lequel vous êtes actuellement</p>
-            <a href="#" class="portfolio-content__link">En savoir plus</a>
+            <a href="cv" class="portfolio-content__link portfolio-link">En savoir plus</a>
           </div>
         </article>
 
@@ -148,10 +148,10 @@
         <h3 class="section__title">Parcours</h3>
         <div class="career-items">
           <div class="career-items__link">
-            <h6 id="education-link" class="link is-active">Formations</h6>
+            <h6 id="education-link" class="link btn-link is-active">Formations</h6>
           </div>
           <div class="career-items__link">
-            <h6 id="experience-link" class="link">Expériences</h6>
+            <h6 id="experience-link" class="link btn-link ">Expériences</h6>
           </div>
         </div>
       </div>
@@ -309,9 +309,9 @@
   </footer>
 
   <!--Modal-->
-  <div class="modal-wrap is-active">
+  <div id="petsbook" class="modal-wrap ">
     <div class="modal">
-      <span class="modal__icon"><i class="fa fa-times" aria-hidden="true"></i></span>
+      <span class="modal__icon remove"><i class="fa fa-times" aria-hidden="true"></i></span>
       <h4 class="modal__title">Petsbook</h4>
 
       <div class="modal-content">
@@ -332,16 +332,16 @@
         </div>
 
         <div class="modal-content__link">
-          <a href="#" class="btn-link">Voir le site</a>
+          <a href="http://petsbook.ovh/" target="_blank" class="btn-link modal-link">Voir le site</a>
         </div>
       </div>
     </div>
   </div>
 
   <!--Modal-->
-  <div class="modal-wrap ">
+  <div id="cv" class="modal-wrap ">
     <div class="modal">
-      <span class="modal__icon"><i class="fa fa-times" aria-hidden="true"></i></span>
+      <span class="modal__icon remove"><i class="fa fa-times" aria-hidden="true"></i></span>
       <h4 class="modal__title">Site CV</h4>
 
       <div class="modal-content">
@@ -361,7 +361,7 @@
         </div>
 
         <div class="modal-content__link">
-          <a href="#" class="btn-link">Voir le site</a>
+          <a href="#head" class="btn-link modal-link">Voir le site</a>
         </div>
       </div>
     </div>

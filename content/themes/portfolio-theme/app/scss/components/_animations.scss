@@ -1,0 +1,130 @@
+
+/* ********************** SLIDE EFFECT ********************** */
+@keyframes slide_left {
+
+    0% {
+        opacity: 0;
+        position: relative;
+        left: -100vw;
+    }
+    100% {
+        opacity: 1;
+        position: relative;
+        left: 0;
+    }
+}
+
+@keyframes slide_right {
+
+    0% {
+        opacity: 0;
+        position: relative;
+        left: 0;
+    }
+    100% {
+        opacity: 1;
+        position: relative;
+        left: -100%;
+    }
+}
+
+/* ********************** OPACITY ********************** */
+@keyframes opacity {
+
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
+
+/* ********************** BACKGROUND ********************** */
+@keyframes bg_animation {
+
+    0% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: #00000075;
+    }
+
+}
+
+/* ********************** ELEMENT POP ********************** */
+@keyframes scale_animation {
+
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+/* ********************** NAV ********************** */
+@keyframes nav_animation {
+    0% {
+        padding: 0;
+        height: 0;
+    }
+    100% {
+        height: 20rem;
+        padding: 4rem 0;
+    }
+}
+
+@keyframes navlist_animation {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    100% {
+        display: list-item;
+        opacity: 1;
+    }
+}
+
+/* ********************** BORDER ********************** */
+@keyframes border_load_sides {
+
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes border_rounded_load {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes border_load {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* ********************** IMAGE HOVER ********************** */
+@keyframes img_hover {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
