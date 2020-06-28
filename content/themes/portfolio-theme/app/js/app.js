@@ -92,7 +92,7 @@ var app = {
     $removeButtonElement.each(function() {
 
       // Définition de l'élément
-      let $element = $(this);  console.log($element)
+      let $element = $(this);  
 
       $element.on('click', function() {
 
