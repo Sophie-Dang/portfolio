@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+<?php get_header() ?>
 <body>
   
   <header class="header">
@@ -44,22 +37,16 @@
 
   <main class="main">
     <!--Head-->
-    <section id="head" class="section-wrap" style="background-image: url('images/bann-light-xl.png');">
+    <section id="head" class="section-wrap" style="background-image: url('<?= get_theme_file_uri('public/images/bann-light-xl.png')?>');">
       <div class="head-content img">
-        <img src="images/IMG_51c75pp2.jpg" alt="image de profil" class="head-img">
+        <img src="<?= get_theme_file_uri('public/images/IMG_51c75pp2.jpg')?>" alt="image de profil" class="head-img">
       </div>
       <div class="head-content text">
         <h2 class="head-content__subtitle">Sophie Dang</h2>
-        <!--
-        <div class="head-content-text">
-          <span class="head-content__text__item">Née le 24 juin 1997</span>
-          <span class="head-content__text__item">Permis B</span>
-        </div>-->
         <h1 class="head-content__title">Developpeuse web</h1>
 
         <address class="head-content-address">
           <a href="mailto:sophie.dang.kieuduyen@gmail.com" class="head-content-address__mail">sophie.dang.kieuduyen@gmail.com</a>
-          <!-- <a href="tel:+33666423780" class="head-content-address__tel">06 66 42 37 80</a> -->
         </address>
 
         <div class="head-social-container">
@@ -82,30 +69,30 @@
           <div class="skills-content">
             <h6 class="skills-content__title">Je parle le ...</h6>
             <div class="skills-content__items">
-              <img class="img-thumbnail" src="images/html5-logo.png" alt="html5-logo">
-              <img class="img-thumbnail" src="images/CSS3-logo.png" alt="html5-logo">
-              <img class="img-thumbnail" src="images/js-logo-squarre.png" alt="html5-logo">
-              <img class="img-thumbnail" src="images/html5-logo.png" alt="html5-logo">
-              <img class="img-thumbnail" src="images/CSS3-logo.png" alt="html5-logo">
-              <img class="img-thumbnail" src="images/js-logo-squarre.png" alt="html5-logo">
+              <img class="img-thumbnail" src="<?= get_theme_file_uri('public/images/html5-logo.png')?>" alt="html5-logo">
+              <img class="img-thumbnail" src="<?= get_theme_file_uri('public/images/CSS3-logo.png')?>" alt="html5-logo">
+              <img class="img-thumbnail" src="<?= get_theme_file_uri('public/images/js-logo-squarre.png')?>" alt="html5-logo">
+              <img class="img-thumbnail" src="<?= get_theme_file_uri('public/images/html5-logo.png')?>" alt="html5-logo">
+              <img class="img-thumbnail" src="<?= get_theme_file_uri('public/images/CSS3-logo.png')?>" alt="html5-logo">
+              <img class="img-thumbnail" src="<?= get_theme_file_uri('public/images/js-logo-squarre.png')?>" alt="html5-logo">
             </div>
           </div>
 
           <div class="skills-content">
             <h6 class="skills-content__title">Je m'aide de ...</h6>
             <div class="skills-content__items">
-              <img class="img-thumbnail" src="images/html5-logo.png" alt="html5-logo">
-              <img class="img-thumbnail" src="images/CSS3-logo.png" alt="html5-logo">
-              <img class="img-thumbnail" src="images/js-logo-squarre.png" alt="html5-logo">
+              <img class="img-thumbnail" src="<?= get_theme_file_uri('public/images/html5-logo.png')?>" alt="html5-logo">
+              <img class="img-thumbnail" src="<?= get_theme_file_uri('public/images/CSS3-logo.png')?>" alt="html5-logo">
+              <img class="img-thumbnail" src="<?= get_theme_file_uri('public/images/js-logo-squarre.png')?>" alt="html5-logo">
             </div>
           </div>
 
           <div class="skills-content">
             <h6 class="skills-content__title">Des notions en ...</h6>
             <div class="skills-content__items">
-              <img class="img-thumbnail" src="images/html5-logo.png" alt="html5-logo">
-              <img class="img-thumbnail" src="images/CSS3-logo.png" alt="html5-logo">
-              <img class="img-thumbnail" src="images/js-logo-squarre.png" alt="html5-logo">
+              <img class="img-thumbnail" src="<?= get_theme_file_uri('public/images/html5-logo.png')?>" alt="html5-logo">
+              <img class="img-thumbnail" src="<?= get_theme_file_uri('public/images/CSS3-logo.png')?>" alt="html5-logo">
+              <img class="img-thumbnail" src="<?= get_theme_file_uri('public/images/js-logo-squarre.png')?>" alt="html5-logo">
             </div>
           </div>
         </div>
@@ -119,7 +106,7 @@
 
         <article class="portfolio-content fadInBottom">
           <a class="portfolio-content__img-link portfolio-link" href="petsbook">
-            <img  class="portfolio-content__img" src="images/petsbook-logo-w.png" alt="">
+            <img  class="portfolio-content__img" src="<?= get_theme_file_uri('public/images/petsbook-logo-w.png')?>" alt="">
           </a>
           <div class="portfolio-content__item">
             <h5 class="portfolio-content__title">Petsbook</h5>
@@ -130,7 +117,7 @@
 
         <article class="portfolio-content fadInBottom">
           <a class="portfolio-content__img-link portfolio-link" href="cv">
-            <img  class="portfolio-content__img" src="images/bann-light-l.png" alt="">
+            <img  class="portfolio-content__img" src="<?= get_theme_file_uri('public/images/bann-light-l.png')?>" alt="">
           </a>
           <div class="portfolio-content__item">
             <h5 class="portfolio-content__title">Mon site CV</h5>
@@ -274,7 +261,7 @@
     </section>
     
     <!--Presentation-->
-    <section id="presentation" class="div-wrap" style="background-image: url('images/bann-light-xl-dark.png');">
+    <section id="presentation" class="div-wrap" style="background-image: url(<?= get_theme_file_uri('public/images/bann-light-xl-dark.png')?>);">
       <div id="presentation-container" class="presentation-container fadInBottom">
         <div class="presentation-content">
           <h3 class="section__title">Qui suis-je ?</h3>
@@ -301,65 +288,5 @@
       </div>
     </section>
   </main>
-
-  <footer class="footer">
-    <div class="copyright">
-      <span class="copyright__text">Copyright© Sophie Dang</span>
-    </div>
-  </footer>
-
-  <!--Modal-->
-  <div id="petsbook" class="modal-wrap ">
-    <div class="modal">
-      <span class="modal__icon remove"><i class="fa fa-times" aria-hidden="true"></i></span>
-      <h4 class="modal__title">Petsbook</h4>
-
-      <div class="modal-content">
-        <div class="modal-row">
-          <img class="modal-row__img" src="images/petsbook-screen.jpg" alt="">
-          <div class="modal-row__text">
-            <span class="txt-title">Projet de fin de formation</span>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet provident accusamus, ad, ipsam corporis vel alias consectetur numquam eaque, neque reiciendis quidem similique. Est, deserunt.
-          </div>
-        </div>
-
-        <div class="modal-row">
-          <iframe class="modal-row__img" height="315" src="https://www.youtube.com/embed/MHGc9LzlKuY?start=4790" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="modal-row__text">
-            <span class="txt-title">Un peu curieux/se ?</span>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet provident accusamus, ad, ipsam corporis vel alias consectetur numquam eaque, neque reiciendis quidem similique. Est, deserunt.
-          </div>
-        </div>
-
-        <div class="modal-content__link">
-          <a href="http://petsbook.ovh/" target="_blank" class="btn-link modal-link">Voir le site</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--Modal-->
-  <div id="cv" class="modal-wrap ">
-    <div class="modal">
-      <span class="modal__icon remove"><i class="fa fa-times" aria-hidden="true"></i></span>
-      <h4 class="modal__title">Site CV</h4>
-
-      <div class="modal-content">
-
-        <div class="modal-row">
-          <img class="modal-row__img" src="images/cv-screen.jpg" alt="">
-          <div class="modal-row__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet provident accusamus, ad, ipsam corporis vel alias consectetur numquam eaque, neque reiciendis quidem similique. Est, deserunt.
-          </div>
-        </div>
-
-        <div class="modal-content__link">
-          <a href="#head" class="btn-link modal-link">Voir le site</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="js/app.js"></script>
-</body>
-</html>
+  <?php get_footer() ?>
+  

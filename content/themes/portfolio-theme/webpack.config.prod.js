@@ -2,7 +2,7 @@
 
 const webpack = require("webpack");
 const path = require("path");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const MiniCSSExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
@@ -93,6 +93,16 @@ let config = {
         transformPath: (targetPath) => targetPath.replace(/^app\/assets\//, '')
       }
     ]),
+    new UglifyJsPlugin({
+        "uglifyOptions":
+        {
+            compress: {
+                warnings: false
+            },
+            sourceMap: true
+        }
+      }
+    ),
   ]
 };
 

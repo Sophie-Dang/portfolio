@@ -1,7 +1,7 @@
 // Fichier de configuration à utiliser dans un environnement de développement
 
 // La fonction Node.js require permet d'importer un module Node.js installé par défaut ou installé avec NPM
-
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 // Webpack (https://webpack.js.org/) : permet de transformer notre code front (Sass, JS avec dépendances, ...) en un code compréhensible par les navigateurs (CSS, JS, ...)
 const webpack = require('webpack');
 // path (https://nodejs.org/api/path.html) : met à disposition des fonctions utilitaires pour travailler avec les fichiers et répertoires de notre application
@@ -145,6 +145,16 @@ const plugins = [
     {
       // Browsersync ne se charge pas du reload, c'est le rôle du Dev Server
       reload: false
+    }
+  ),
+  new UglifyJsPlugin({
+      "uglifyOptions":
+      {
+          compress: {
+              warnings: false
+          },
+          sourceMap: true
+      }
     }
   ),
 ];
