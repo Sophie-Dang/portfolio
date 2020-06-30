@@ -16,7 +16,8 @@
     "require": {
         "johnpbloch/wordpress": "^5.3",
         "wpackagist-theme/twentytwenty": "1.0",
-        "wpackagist-plugin/akismet": "^4.1"
+        "wpackagist-plugin/akismet": "^4.1",
+        "wpackagist-plugin/wps-hide-login": "^1.5"
     },
     "extra" : {
         "wordpress-install-dir": "wp",
