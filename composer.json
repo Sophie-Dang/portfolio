@@ -18,7 +18,8 @@
         "wpackagist-theme/twentytwenty": "1.0",
         "wpackagist-plugin/akismet": "^4.1",
         "wpackagist-plugin/wps-hide-login": "^1.5",
-        "wpackagist-plugin/wordfence": "^7.4"
+        "wpackagist-plugin/wordfence": "^7.4",
+        "wpackagist-plugin/simply-show-hooks": "^1.2"
     },
     "extra" : {
         "wordpress-install-dir": "wp",
