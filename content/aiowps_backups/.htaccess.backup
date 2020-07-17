@@ -1,0 +1,31 @@
+
+
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^wp/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1
+<Files wp-config.php>
+order allow,deny
+deny from all
+</Files>
+Options All -Indexes
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+# BEGIN WordPress
+# Les directives (lignes) entre 'BEGIN WordPress' et 'END WordPress' sont
+# généré dynamiquement, et ne doivent uniquement être modifiées via les filtres WordPress.
+# Toute modification des directives entre ces marqueurs sera outrepassée.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /Projets/portfolio/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /Projets/portfolio/index.php [L]
+</IfModule>
+
+# END WordPress
+

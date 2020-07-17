@@ -43,3 +43,11 @@ a {
     }
 }
 
+
+.cv-pdf-link {
+    text-align: center;
+
+    &>a:hover {
+        color: $color_accent_darken;
+    }
+}

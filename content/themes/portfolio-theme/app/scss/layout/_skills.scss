@@ -1,5 +1,7 @@
 #skills {
     position: relative;
+    top: -17rem;
+
     margin-bottom: 2rem;
 
     .content-container {
@@ -8,11 +10,8 @@
         box-shadow: 0 0 29px #00000012;
         
         padding: 2rem;
-    
-        position: absolute;
-        bottom: -29rem;
-        left: 0;
-        right: 0;
+
+        max-width: 80rem;
     }
 
     .skills-content {
@@ -40,10 +39,7 @@
     }
 
     @media(min-width:576px) {
-
-        .content-container {
-            bottom: -26rem;
-        }
+        top: -15rem;
 
         .skills-content {
             width: 60%;
@@ -52,15 +48,13 @@
     }
 
     @media (min-width:768px) {
-       
-        .content-container {
-            bottom: -26rem;
-        }
+        top: -13rem;
     }
     
     @media (min-width: 992px) {
+        top: -10rem;
+
         .content-container {
-            bottom: -17rem;
 
             display: flex;
             flex-direction: column;
@@ -114,7 +108,7 @@
             justify-content: space-evenly;
             width: 100%;
             margin: auto;
-            margin-top: 2.5rem;
+            margin-top: 0rem;
             margin-bottom: 0;
         }
     }

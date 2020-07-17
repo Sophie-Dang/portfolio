@@ -13,7 +13,7 @@
       <ul class="nav-list">
         <!--------------------->
         <li class="nav-list__item">
-          <a href="#career" class="nav-link">Parcours</a>
+          <a href="#head" class="nav-link">Contact</a>
         </li>
         <!--------------------->
         <li class="nav-list__item">
@@ -21,15 +21,15 @@
         </li>
         <!--------------------->
         <li class="nav-list__item">
-          <a href="#portfolio-title" class="nav-link">Portfolio</a>
+          <a href="#portfolio-title" class="nav-link">Projets</a>
         </li>
         <!--------------------->
         <li class="nav-list__item">
-          <a href="#head" class="nav-link">Contact</a>
+          <a href="#career" class="nav-link">Parcours</a>
         </li>
         <!--------------------->
         <li class="nav-list__item">
-          <a href="#presentation-container" class="nav-link">About</a>
+          <a href="#presentation-container" class="nav-link">A propos</a>
         </li>
         <!--------------------->
       </ul>

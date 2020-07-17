@@ -65,7 +65,7 @@ var app = {
 
   removeModal: function() {
 
-    const $removeIconElement = $('.modal__icon.remove');
+    const $removeIconElement = $('.modal__icon.remove > i');
     const $removeButtonElement = $('.modal-link');
     let $body = $('body');
 

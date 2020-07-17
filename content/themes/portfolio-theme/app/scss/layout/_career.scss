@@ -36,7 +36,8 @@
     .career {
 
         &-content {
-
+            max-width: 80rem;
+            
             &:first-child {
                 margin-bottom: 3rem;
             }
