@@ -9,6 +9,6 @@
     <div class="portfolio-content__item">
         <h5 class="portfolio-content__title"><?= the_title() ?></h5>
         <p class="portfolio-content__texte"><?= the_excerpt() ?></p>
-        <a href="petsbook" class="portfolio-content__link portfolio-link">En savoir plus</a>
+        <a href="<?= $post_slug ?>" class="portfolio-content__link portfolio-link">En savoir plus</a>
     </div>
 </article>
