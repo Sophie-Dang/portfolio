@@ -10,4 +10,4 @@
 !/content/themes/portfolio-theme
 /content/languages
 /content/upgrade
-/content/uploads
+!/content/uploads
