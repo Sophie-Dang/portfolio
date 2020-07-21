@@ -4,7 +4,6 @@
 /content/plugins/*
 !/content/plugins/portfolio-plugin
 !/content/plugins/advanced-custom-fields-pro
-!/content/plugins/all-in-one-wp-security-and-firewall
 /content/themes/*
 !/content/themes/portfolio-theme
 /content/languages
