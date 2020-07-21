@@ -119,7 +119,7 @@
                 <li class="textbloc__list__item">
                   <a class="textbloc__link" href="https://stevegates.co/" target="_blank">Steve Gates</a>
                 </li>
-                <li class="textbloc__list__item">Participation à l'élaboration de sites web vitrine, e-commerce et sites plus spécifiques, autant en front qu'en back</li>
+                <li class="textbloc__list__item">Participation à l'élaboration et au développement de sites web vitrine, e-commerce et plus spécifiques, autant en front qu'en back</li>
                 <li class="textbloc__list__item"><span class="text-bold">Technos utilisées :</span> HTML, CSS, PHP, Smarty, Javascript/ jQuery, MySQL, Wordpress, Prestashop</li>
               </ul>
             </div>
@@ -157,7 +157,7 @@
     </div>
 
     <div class="cv-pdf-link">
-      <a href="<?= get_theme_file_uri('public/images/CV_Sophie_DANG.pdf') ?>" target="_blank">Voir le CV (pdf)</a>
+      <a href="<?= get_theme_file_uri('public/images/CV_Sophie_DANG.pdf') ?>" target="_blank">Visualiser mon CV (pdf)</a>
     </div>
   
   </section>
@@ -176,7 +176,7 @@
 
           <span class="br">
             <i class="fa fa-laptop" aria-hidden="true"></i>
-            Et le dev dans tout ça ?
+            Et le développement web dans tout ça ?
           </span>
           Vous l'aurez compris, je suis en reconversion. Je ne pensais pas atterrir là mais me voilà ! Mes premières lignes de code ? Pour mon blog mode ! C'était génial, archi cool même ! Une nouvelle passion est alors née. Et du coup me voilà, formation en poche avec spécialisation au CMS WordPress, pleine de joie à l'idée de faire vivre tous pleins de projets grâce à la programmation :D
 
