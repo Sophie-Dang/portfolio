@@ -16,9 +16,8 @@ $video_url =  get_field('project_video');
 
         <div class="modal-content">
             <div class="modal-row">
-                <img class="modal-row__img" src="<?= $other_image['url'] ?>" alt="">
+                <img class="modal-row__img" src="<?= $other_image['url'] ?>" alt="image-page-<?= $post_slug ?>">
                 <div class="modal-row__text">
-                    <!-- <span class="txt-title">Projet de fin de formation</span> -->
                     <?= the_content() ?>
                 </div>
             </div>
