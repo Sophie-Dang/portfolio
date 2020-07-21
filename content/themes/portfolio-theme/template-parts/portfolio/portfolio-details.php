@@ -39,7 +39,7 @@ $video_url =  get_field('project_video');
             <?php endif; ?>
 
             <div class="modal-content__link">
-                <a href="<?= $project_url ?>" target="_blank" class="btn-link modal-link">Voir le site</a>
+                <a href="<?= $project_url ?>" target="_blank" class="btn-link modal-link">Voir <?= the_title() ?></a>
             </div>
         </div>
     </div>
