@@ -12,7 +12,8 @@
       
               foreach($terms as $term) 
               {
-                  $term_parent_id =  $term->parent; 
+                  $term_parent_id =  $term->parent;
+                  $term_name = $term->name;
               
                   if($term_parent_id == 20) 
                   {
@@ -20,7 +21,7 @@
           
                       if(!empty($term_thumbnail)) 
                       {
-                          echo '<img class="img-thumbnail" src="' . $term_thumbnail["url"] . '" alt="' . $term_thumbnail["title"] . '"> ';
+                          echo '<img class="img-thumbnail" src="' . $term_thumbnail["url"] . '" alt="' . $term_thumbnail["title"] . '" title="'. $term_name .'"> ';
                       } 
                   }
               }
@@ -36,6 +37,7 @@
               foreach($terms as $term) 
               {
                   $term_parent_id =  $term->parent; 
+                  $term_name = $term->name;
               
                   if($term_parent_id == 21) 
                   {
@@ -43,7 +45,7 @@
         
                     if(!empty($term_thumbnail)) 
                     {
-                        echo '<img class="img-thumbnail" src="' . $term_thumbnail["url"] . '" alt="' . $term_thumbnail["title"] . '"> ';
+                        echo '<img class="img-thumbnail" src="' . $term_thumbnail["url"] . '" alt="' . $term_thumbnail["title"] . '" title="'. $term_name .'"> ';
                     } 
                   }
                 }
@@ -58,6 +60,7 @@
               foreach($terms as $term) 
               {
                 $term_parent_id =  $term->parent; 
+                $term_name = $term->name;
             
                 if($term_parent_id == 22) 
                 {
@@ -65,7 +68,7 @@
       
                   if(!empty($term_thumbnail)) 
                   {
-                      echo '<img class="img-thumbnail" src="' . $term_thumbnail["url"] . '" alt="' . $term_thumbnail["title"] . '"> ';
+                      echo '<img class="img-thumbnail" src="' . $term_thumbnail["url"] . '" alt="' . $term_thumbnail["title"] . '" title="'. $term_name .'"> ';
                   } 
                 }
               }
