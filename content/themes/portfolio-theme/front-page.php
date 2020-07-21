@@ -143,9 +143,6 @@
             <div class="textbloc-container">
               <h3 class="textbloc__title">Stagiaire costumière</h3>
               <span class="textbloc__date">Avril 2017 - Mai 2017</span>
-              <!-- <p class="textbloc__text">
-                <a class="textbloc__link" href="https://www.facebook.com/Decaurdesignandco-880035208735852/" target="_blank">Decaur Design & co</a>
-              </p> -->
               <ul class="textbloc__list">
                 <li class="textbloc__list__item">
                   <a class="textbloc__link" href="https://www.facebook.com/Decaurdesignandco-880035208735852/" target="_blank">Decaur Design & co</a>
@@ -160,7 +157,7 @@
     </div>
 
     <div class="cv-pdf-link">
-      <a href="<?= get_theme_file_uri('public/images/CV_Sophie_DANG.pdf') ?>" target="_blank">Voir le CV</a>
+      <a href="<?= get_theme_file_uri('public/images/CV_Sophie_DANG.pdf') ?>" target="_blank">Voir le CV (pdf)</a>
     </div>
   
   </section>
