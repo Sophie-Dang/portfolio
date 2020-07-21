@@ -20,7 +20,7 @@
           
                       if(!empty($term_thumbnail)) 
                       {
-                          echo '<img class="img-thumbnail" src="' . $term_thumbnail["url"] . '" alt="html5-logo"> ';
+                          echo '<img class="img-thumbnail" src="' . $term_thumbnail["url"] . '" alt="' . $term_thumbnail["title"] . '"> ';
                       } 
                   }
               }
@@ -43,7 +43,7 @@
         
                     if(!empty($term_thumbnail)) 
                     {
-                        echo '<img class="img-thumbnail" src="' . $term_thumbnail["url"] . '" alt="html5-logo"> ';
+                        echo '<img class="img-thumbnail" src="' . $term_thumbnail["url"] . '" alt="' . $term_thumbnail["title"] . '"> ';
                     } 
                   }
                 }
@@ -65,7 +65,7 @@
       
                   if(!empty($term_thumbnail)) 
                   {
-                      echo '<img class="img-thumbnail" src="' . $term_thumbnail["url"] . '" alt="html5-logo"> ';
+                      echo '<img class="img-thumbnail" src="' . $term_thumbnail["url"] . '" alt="' . $term_thumbnail["title"] . '"> ';
                   } 
                 }
               }
