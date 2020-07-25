@@ -31,7 +31,7 @@
         </div>
 
         <div class="skills-content">
-          <h6 class="skills-content__title">Je m'aide de ...</h6>
+          <h6 class="skills-content__title">J'utilise ...</h6>
           <div class="skills-content__items">
             <?php
               foreach($terms as $term) 
