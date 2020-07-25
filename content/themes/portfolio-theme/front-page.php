@@ -170,16 +170,16 @@
         <p class="presentation-content__text">
           <span class="br">
             <i class="fa fa-flag" aria-hidden="true"></i>
-            Au départ, j'étais partie pour des études en art...
+            Au départ, j'étais partie pour des études en art
           </span>
-          J'ai donc effectué une Mise à Niveau aux Arts Appliqués (MANAA), au cours de laquelle j'y ai découvert une passion naissante pour la mode. Eh bien soit ! Je me suis ainsi lancée dans le milieu de la mode, en Stylisme & Modélisme. Tout ne s'est pas passé comme prévu, je fus obligée de quitter, mais la passion reste intacte.
+          J'ai effectué une Mise à Niveau aux Arts Appliqués (MANAA), au cours de laquelle j'ai découvert une passion naissante pour la mode. Eh bien soit ! Je me suis ainsi lancée dans le milieu de la mode, en Stylisme & Modélisme. Tout ne s'est pas passé comme prévu, j'ai décidé de quitter, mais la passion reste intacte.
 
           <span class="br">
             <i class="fa fa-laptop" aria-hidden="true"></i>
             Et le développement web dans tout ça ?
           </span>
-          Vous l'aurez compris, je suis en reconversion. Ce fut improbable, je ne pensais pas pouvoir dire un jour "Je suis développeur web" ! 
-          Mes premières lignes de code furent pour mon blog mode. Une passion pour le développement web est alors née. Me voilà donc, formation en poche avec spécialisation au CMS WordPress, pleine de joie à l'idée de relever de nouveaux challenges et faire vivre tous pleins de projets grâce à la programmation !
+          Vous l'aurez compris, je suis en reconversion. C'était improbable, je ne pensais pas pouvoir dire un jour "Je suis développeur web" ! 
+          Mes premières lignes de code furent pour mon blog mode. Une passion pour le développement web est alors née. Me voilà donc, formation en poche avec spécialisation au CMS WordPress, pleine de joie à l'idée de relever de nouveaux challenges et faire vivre tous plein de projets grâce à la programmation !
 
           <span class="br">
             <i class="fa fa-map-pin" aria-hidden="true"></i>
