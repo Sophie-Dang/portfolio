@@ -1,0 +1,10 @@
+/vendor
+/wp
+/wp-config.php
+/content/plugins/*
+!/content/plugins/portfolio-plugin
+/content/themes/*
+!/content/themes/portfolio-theme
+/content/languages
+/content/upgrade
+/content/uploads

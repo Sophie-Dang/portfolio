@@ -1,0 +1,63 @@
+.btn-link {
+    cursor: pointer;
+
+    position: relative;
+
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 1rem;
+    border-radius: 8px;
+    background: linear-gradient(0deg, #a9abcc 10%, #81c8e6 100%);
+    color: #ffffff;
+    font-weight: normal;
+    align-self: center;
+
+    &:hover::after {
+        content: " ";
+        display: block;
+        height: 100%;
+        width: 100%;
+
+        position: absolute;
+        left: 0px;
+        right: 0;
+        bottom: -6px;
+
+        padding: .3rem 0;
+
+        border-radius: 8px;
+        border: none;
+        border-bottom: $color_accent solid 1.5px;
+
+        transition: ease;
+        animation: border_load_sides .4s linear;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        transition: all .2s ease-in-out;
+        color: $color_main;
+    }
+
+    &.is-active {
+
+        &::after {
+            content: " ";
+            display: block;
+            height: 100%;
+            width: 100%;
+
+            position: absolute;
+            left: 0px;
+            right: 0;
+            bottom: -6px;
+
+            padding: .3rem 0;
+
+            border-radius: 8px;
+            border-bottom: $color_accent solid 1.5px;
+
+            transition: ease;
+        }
+    }
+}

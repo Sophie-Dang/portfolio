@@ -1,0 +1,53 @@
+a {
+    text-decoration: none;
+
+    display: inline;
+    position: relative;
+
+    color: $color_accent_darken;
+
+    &:hover::after {
+        content: " ";
+        display: block;
+        width: 100%;
+
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+
+        border-bottom: $color_accent solid 1.5px;
+
+        transition: ease;
+        animation: border_load 1s;
+    }
+
+    &:hover {
+        color: $color_accent;
+    }
+
+    &:active::after {
+        content: " ";
+        display: block;
+        width: 100%;
+
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+
+        border-bottom: $color_accent solid 1.5px;
+        color: white;
+    }
+
+    &:active {
+        color: $color_accent;
+    }
+}
+
+
+.cv-pdf-link {
+    text-align: center;
+
+    &>a:hover {
+        color: $color_accent_darken;
+    }
+}

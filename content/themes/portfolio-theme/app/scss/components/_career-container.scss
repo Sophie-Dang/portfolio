@@ -1,0 +1,46 @@
+.career-wrap {
+    display: flex;
+    width: 100%;
+
+    animation: slide_left .8s;
+    transition: all  ease-in-out 2s;
+
+    position: relative;
+
+    &.experience {
+        animation: slide_right .8s;
+        transition: all  ease-in-out 2s;
+
+        left: -100%;
+    }
+
+    #education,
+    #experience {
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%;
+        position: relative;
+
+        margin-top: 0;
+    } 
+
+    #education {
+        opacity: 0;
+
+        &.is-active {
+            opacity: 1;
+            animation: opacity 1.5s;
+            transition: all  ease-in-out 2s;
+        }
+    }
+    
+    #experience {
+        opacity: 0;
+
+        &.is-active {
+            opacity: 1;
+            animation: opacity 1s;
+            transition: all  ease-in-out 2s;
+        }
+    }
+}
