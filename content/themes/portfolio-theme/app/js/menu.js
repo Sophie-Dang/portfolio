@@ -1,6 +1,5 @@
 var menu = {
     init: function() {
-        console.log('menu');
 
         var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
 
