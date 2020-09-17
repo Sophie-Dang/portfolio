@@ -6,7 +6,7 @@ Portfolio is a showcase website. It is my own portfolio, like an online CV.
 Wordpress, PHP, jQuery, Webpack, SCSS.
 
 All the theme was made from scratch without any builders.
-I used ACF plugin to dynamize some datas.
+I also used ACF plugin to dynamize some datas.
 
 ### Aim
 - learn new things
